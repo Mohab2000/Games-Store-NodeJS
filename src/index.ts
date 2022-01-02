@@ -4,7 +4,6 @@ import server from "./server/index";
 import axios from "axios";
 import Game from "./models/GamesModel";
 import Genre from "./models/GenreModel";
-dotenv.config({ path: "../.env" });
 
 
 const uri = "mongodb+srv://hazem:hazem123@initial.roxge.mongodb.net/GamesDatabase?retryWrites=true&w=majority";
