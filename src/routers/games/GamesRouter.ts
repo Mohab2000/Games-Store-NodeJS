@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getAll, add } from "./GamesController";
+import { getAll, getFeatured, add, getById } from "./GamesController";
 
 const router = Router();
 
@@ -13,6 +13,9 @@ router.post("/", add);
 
 router.get("/", getAll);
 
-// router.get("/:postId", GamesController.getGame);
+router.get("/featured", getFeatured);
+
+router.get("/:id", getById)
+
 
 export default router;
